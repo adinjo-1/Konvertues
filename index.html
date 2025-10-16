@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="sq">
 <head>
@@ -124,3 +125,131 @@
   </div>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <title>Këmbim Valutor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #7b4397, #4b6cb7);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 50px;
+      border-radius: 20px;
+      width: 420px;
+      text-align: center;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(9px);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .slogan {
+      font-style: italic;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 14px;
+      margin-top: 12px;
+      margin-bottom: 24px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.25);
+      color: #fff;
+      appearance: none;
+    }
+
+    input::placeholder {
+      color: #e0e0e0;
+    }
+
+    select option {
+      color: #000;
+    }
+
+    button {
+      background: linear-gradient(45deg, #8e44ad, #3498db);
+      color: white;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .flags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 25px;
+      font-size: 24px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💱 Këmbim Valutor</h1>
+    <div class="slogan">Konverto Lek në monedha të huaja</div>
+
+    <form action="convert.php" method="POST">
+      <input type="number" name="shifra" placeholder="Shkruaj shumën në Lek" required min="0" step="any" />
+      <select name="zgjedhja" required>
+        <option value="" disabled selected>Zgjidh monedhën</option>
+        <option value="ALL_EUR">Lek → Euro 🇪🇺</option>
+        <option value="ALL_USD">Lek → Dollar Amerikan 🇺🇸</option>
+        <option value="ALL_GBP">Lek → Pound Britanik 🇬🇧</option>
+        <option value="ALL_CHF">Lek → Franga Zviceriane 🇨🇭</option>
+        <option value="ALL_CAD">Lek → Dollar Kanadez 🇨🇦</option>
+        <option value="ALL_AUD">Lek → Dollar Australian 🇦🇺</option>
+        <option value="ALL_NZD">Lek → Dollar Zelanda e Re 🇳🇿</option>
+        <option value="ALL_JPY">Lek → Jen Japonez 🇯🇵</option>
+        <option value="ALL_CNY">Lek → Yuan Kinez 🇨🇳</option>
+        <option value="ALL_TRY">Lek → Lira Turke 🇹🇷</option>
+        <option value="ALL_HUF">Lek → Forint Hungarez 🇭🇺</option>
+        <option value="ALL_SEK">Lek → Korona Suedeze 🇸🇪</option>
+        <option value="ALL_DKK">Lek → Korona Daneze 🇩🇰</option>
+        <option value="ALL_NOK">Lek → Korona Norvegjeze 🇳🇴</option>
+      </select>
+      <button type="submit">Konverto</button>
+    </form>
+
+    <div class="flags">
+      🇦🇱 🇪🇺 🇺🇸 🇬🇧 🇨🇭 🇨🇦 🇦🇺 🇳🇿 🇯🇵 🇨🇳 🇹🇷 🇭🇺 🇸🇪 🇩🇰 🇳🇴
+    </div>
+
+    <div class="footer">© 2025 | Vetëm konvertim nga Lek në monedha të huaja</div>
+  </div>
+</body>
+</html>
+>>>>>>> 9fec06cf45c86df095736a37ec1067f081b34f05
