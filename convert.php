@@ -1,6 +1,6 @@
 
 <?php
-// Defino kurset e konvertimit (1 njësi e monedhës së huaj në Lek)
+
 $kurset = [
     "EUR" => 97,
     "USD" => 92,
