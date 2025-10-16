@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8" />
+    <title>Këmbim Valutor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #7b4397, #4b6cb7);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 50px 45px 45px 45px;
+            border-radius: 20px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(9px);
+            position: relative;
+        }
+
+        .emoji-logo {
+            font-size: 70px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+        }
+
+        h1 {
+            margin-bottom: 8px;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1.1px;
+        }
+
+        .slogan {
+            font-size: 16px;
+            opacity: 0.85;
+            margin-bottom: 28px;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 14px 15px;
+            margin-top: 12px;
+            margin-bottom: 24px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.25);
+            color: #fff;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            transition: box-shadow 0.3s ease;
+        }
+
+        input::placeholder {
+            color: #e0e0e0;
+        }
+
+        input:focus,
+        select:focus {
+            box-shadow: 0 0 12px 3px rgba(255, 255, 255, 0.7);
+            background-color: rgba(255, 255, 255, 0.35);
+            color: #000;
+        }
+
+        select option {
+            color: #000;
+        }
+
+        button {
+            background: linear-gradient(45deg, #8e44ad, #3498db);
+            color: white;
+            padding: 14px 0;
+            width: 100%;
+            border: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(142, 68, 173, 0.7);
+            transition: background 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #a255d6, #5dade2);
+            box-shadow: 0 8px 25px rgba(162, 82, 214, 0.9);
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 13px;
+            opacity: 0.85;
+        }
+
+        /* Ikona flamujsh */
+        .icons {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
+        }
+
+        .icons img {
+            width: 48px;
+            height: 32px;
+            cursor: default;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Emoji si logo -->
+        <div class="emoji-logo">💰</div>
+
+        <h1>Këmbim Valutor</h1>
+        <div class="slogan">Konverto Lek dhe Euro shpejt dhe lehtë</div>
+
+        <form action="convert.php" method="POST">
+            <input type="number" name="shifra" placeholder="Shkruaj shifrën..." required />
+            <select name="zgjedhja" required>
+                <option value="" disabled selected>Zgjidh drejtimin</option>
+                <option value="1">Lek → Euro</option>
+                <option value="2">Euro → Lek</option>
+            </select>
+            <button type="submit">Konverto</button>
+        </form>
+
+        <!-- Ikonat: Flamuri EU, Shqipëri -->
+        <div class="icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="Flamuri i Europës" title="Euro" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg" alt="Flamuri i Shqipërisë" title="Lek" />
+        </div>
+
+        <div class="footer">Projekt © 2025</div>
+    </div>
+</body>
+</html>
